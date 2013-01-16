@@ -1,4 +1,4 @@
-project-euler
+Project Euler
 =============
 
-My Project Euler solutions in Haskell.
+These are my [Project Euler](http://projecteuler.net/) solutions in Haskell.
