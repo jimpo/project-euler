@@ -1,10 +1,8 @@
-import Data.List
+import Data.List (findIndex)
 
 main = print solve
 
-nDigits = length . show
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
 
-fibs = 1 : 1 : zipWith (+) fibs (tail fibs)
-
-solve = case findIndex (\n -> 1000 == nDigits n) fibs of
-          Just n -> n + 1 -- 1 indexed terms
+solve = x
+    where Just x = findIndex (\x -> 1000 <= length (show x)) fibs
